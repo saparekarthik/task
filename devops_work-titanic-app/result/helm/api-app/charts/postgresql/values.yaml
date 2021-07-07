@@ -1,0 +1,23 @@
+# Default values for postgresql.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: nexgtech/postgresql
+  tag: 11.5.1
+  pullPolicy: IfNotPresent
+
+imagePullSecrets:
+  - name: regcred
+
+nameOverride: ""
+fullnameOverride: ""
+
+# postgresql auth using secret
+postgresqlUsername: "titanic"
+postgresqlPassword: "/V9A_c?SmJ<]4DRE"
+
+service:
+  type: ClusterIP
+  port: 5432

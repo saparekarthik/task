@@ -1,0 +1,6 @@
+.git
+Dockerfile
+.dockerignore
+__pycache__
+*.pyc
+titanic-postgres
